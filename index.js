@@ -7,7 +7,7 @@ const app = express();
 // app.use(express.static('images/full'));/
 app.use(express.static(__dirname + '/images'));
 app.get('/', (req, res) => {
-    res.status(200).send('Hello world');
+    res.status(200).send('Image Upload App');
 });
 app.use('/', routes);
 
