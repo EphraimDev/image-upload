@@ -23,7 +23,7 @@ class ImageController {
 				fileFilter: ImageController.validateImage,
 			});
 
-			const imageUpload = await upload.single('picture');
+			const imageUpload = await upload.single('image');
 			imageUpload(req, res, async function(err) {
 				if (req.file) {
 					sharp(req.file.path)
